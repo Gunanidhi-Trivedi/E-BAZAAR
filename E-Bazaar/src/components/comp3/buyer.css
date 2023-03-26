@@ -1,0 +1,15 @@
+.buyer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.buyer h1 {
+    font-family: League Spartan, sans-serif;
+    font-size: 3.5rem;
+}
+
+.buyer a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}

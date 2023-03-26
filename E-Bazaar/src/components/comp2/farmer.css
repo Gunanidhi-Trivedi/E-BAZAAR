@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@700&display=swap');
+/*League Spartan , Montserrat*/
+
+.farmer{
+    text-align: center;
+    padding: 2rem;
+}
+
+.farmer h1{
+    font-family: League Spartan, sans-serif;
+    font-size: 3.5rem;
+}
+
+.farmer a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}

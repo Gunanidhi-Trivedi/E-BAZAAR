@@ -7,7 +7,7 @@ const Buyer = () => {
   return (
     <div className="buyer">
         <h1>Buyer Portal</h1>
-        <Link to="/#home" >HOMEPAGE</Link>
+        <button class='btn btn-primary'><Link to="/#home" >HOMEPAGE</Link></button>
     </div>
   )
 }

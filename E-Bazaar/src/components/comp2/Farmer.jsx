@@ -7,7 +7,7 @@ const Farmer = () => {
   return (
     <div className="farmer">
         <h1>Farmer Portal</h1>
-        <Link to="/#home" >HOMEPAGE</Link>
+        <button class='btn btn-primary'><Link to="/#home" >HOMEPAGE</Link></button>
     </div>
   )
 }
