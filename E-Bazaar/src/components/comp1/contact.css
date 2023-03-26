@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@700&display=swap');
 /*League Spartan , Montserrat*/
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 .footer{
     background-color: rgb(18, 105, 25);
     font-family: Montserrat , sans-serif;
     padding: 1px 0px;
+    margin-top: 100px;
     text-align: center;
     color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
     background: rgb(255, 183, 0);
         background: linear-gradient(90deg, rgb(255, 149, 0) 0%, rgb(51, 197, 7) 100%);
 }
