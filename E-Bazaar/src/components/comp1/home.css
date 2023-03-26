@@ -2,8 +2,7 @@
 /*League Spartan , Montserrat*/
 
 .bgimg {
-    background-image: url('../assets/background.png');
-    background-color: rebeccapurple;
+    background-image: url('../../assets/background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
