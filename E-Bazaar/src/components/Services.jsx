@@ -3,6 +3,7 @@ import './services.css'
 
 const Services = () => {
   return (
+<<<<<<< HEAD
 
     <div>
       <div>
@@ -30,6 +31,10 @@ const Services = () => {
           </div>
         </div>
       </div>
+=======
+    <div id='services'>
+      Services
+>>>>>>> dd2c380a7847ba11582150a60d139314f6c202a1
     </div>
   )
 }
