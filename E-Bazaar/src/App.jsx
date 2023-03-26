@@ -9,36 +9,40 @@ import Farmer from '../src/components/comp2/Farmer'
 import Buyer from '../src/components/comp3/Buyer'
 
 const App = () => {
+  // const loc = useLocation();
+  
 
-  const loc = useLocation();
+  // if(loc.pathname == "/farmerportal")
+  // {
+  //   return(
+  //     <Routes>
+  //       <Route path='/farmerportal' element={<Farmer/>} />
+  //     </Routes>
+  //   )
+  // }
+  // else if(loc.pathname == '/buyerportal')
+  // {
+  //     return(
+  //       <Routes>
+  //         <Route path='/buyerportal' element={<Buyer/>} />
+  //       </Routes>
+  //     )
+  // }
+  // else
+  // {
 
-  if(loc.pathname == "/farmerportal")
-  {
-    return(
-      <Routes>
-        <Route path='/farmerportal' element={<Farmer/>} />
-      </Routes>
-    )
-  }
-  else if(loc.pathname == '/buyerportal')
-  {
-      return(
-        <Routes>
-          <Route path='/buyerportal' element={<Buyer/>} />
-        </Routes>
-      )
-  }
-  else
-  {
+  // this method makes the nev bar and footer alwase visible when changin the page
     return (
-    <div>
+  <div>
       <Navbar/>
-      <Home/>
-      <Services/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/farmerportal' element={<Farmer/>} />
+        <Route path='/buyerportal' element={<Buyer/>} />
+      </Routes>
       <Contact/>
     </div>
   )
-  }
 }
 
 export default App
