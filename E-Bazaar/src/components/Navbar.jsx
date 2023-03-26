@@ -1,21 +1,23 @@
 import React from 'react'
+import logo from '../assets/logo.png'
+import './navbar.css'
 
 const Navbar = () => {
   return (
     <div>
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <nav class="navbar navbar-expand-lg navbar-light bgnav">
+          <img className='imgsize' src={logo} alt="logo" />
+          <div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Home </a>
-              <a class="nav-item nav-link" href="#">Farmer</a>
-              <a class="nav-item nav-link" href="#">Market Place</a>
-              <a class="nav-item nav-link" href="#">Contact</a>
+              <a class="nav-item nav-link text-white px-4" href="#">Home </a>
+              <a class="nav-item nav-link text-white px-4" href="#">Farmer</a>
+              <a class="nav-item nav-link text-white px-4" href="#">Market Place</a>
+              <a class="nav-item nav-link text-white px-4" href="#">Contact</a>
+              <a class="nav-item nav-link text-white px-4" href="#">Login</a>
             </div>
+          </div>
           </div>
         </nav>
       </div>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500&display=swap');
+/*League Spartan , Montserrat*/
+
+.bgnav {
+    background: rgb(29, 29, 29);
+    background: linear-gradient(180deg, rgba(29, 29, 29, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3rem;
+    font-family: Montserrat , sans-serif;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.imgsize {
+    width: 5%;
+    height: 5%;
+}
