@@ -1,7 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Route , Routes } from 'react-router-dom'
 import './services.css'
 
 const Services = () => {
+
+  const navigate = useNavigate()
+  
+  function farmerhelp() {
+    navigate("/farmerportal")
+  }
+
+  function buyerhelp() {
+    navigate("/buyerportal")
+  }
+
   return (
     <div id='services'>
       <div>
@@ -14,7 +27,7 @@ const Services = () => {
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <button class="btn btn-primary" onClick={farmerhelp}>Sell Your Crop</button>
             </div>
           </div>
         </div>
@@ -24,7 +37,7 @@ const Services = () => {
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <button class="btn btn-primary" onClick={buyerhelp}>Purchase The Crop</button>
             </div>
           </div>
         </div>

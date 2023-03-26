@@ -14,7 +14,7 @@ const Navbar = () => {
               <a class="nav-item nav-link text-white px-4" href="#home">HOME</a>
               <a class="nav-item nav-link text-white px-4" href="#services">SERVICES</a>
               <a class="nav-item nav-link text-white px-4" href="#contact">CONTACT</a>
-              <a class="nav-item nav-link text-white px-4" href="#login">LOGIN</a>
+              <a class="nav-item nav-link text-white px-4" href="#">LOGIN</a>
             </div>
           </div>
           </div>
