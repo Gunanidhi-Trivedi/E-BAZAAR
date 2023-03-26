@@ -11,11 +11,10 @@ const Navbar = () => {
           <div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link text-white px-4" href="#">Home </a>
-              <a class="nav-item nav-link text-white px-4" href="#">Farmer</a>
-              <a class="nav-item nav-link text-white px-4" href="#">Market Place</a>
-              <a class="nav-item nav-link text-white px-4" href="#">Contact</a>
-              <a class="nav-item nav-link text-white px-4" href="#">Login</a>
+              <a class="nav-item nav-link text-white px-4" href="#">HOME</a>
+              <a class="nav-item nav-link text-white px-4" href="#">SERVICES</a>
+              <a class="nav-item nav-link text-white px-4" href="#">CONTACT</a>
+              <a class="nav-item nav-link text-white px-4" href="#">LOGIN</a>
             </div>
           </div>
           </div>
