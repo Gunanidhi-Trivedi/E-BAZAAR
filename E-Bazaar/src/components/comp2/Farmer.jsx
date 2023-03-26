@@ -1,9 +1,19 @@
 import React from 'react'
 import './farmer.css'
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Farmer = () => {
+
+  const navigate = useNavigate()
+  
+  function pitch() {
+    navigate("/pitch")
+  }
+  function sell() {
+    navigate("/sell")
+  }
+
   return (
     <div className="farmer">
       <div>
@@ -14,18 +24,18 @@ const Farmer = () => {
           <div class="px-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">SELL</h5>
+                <h5 class="card-title">SELL NEW CROPS</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">SELL</a>
+                <a onClick={pitch} href="" class="btn btn-primary">MAKE A PITCH FOR YOUR CROP</a>
               </div>
             </div>
           </div>
           <div class="px-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">PRE-ORDER</h5>
+                <h5 class="card-title">TAKE ORDER FOR CROPS IN DEMAND</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">pre-order</a>
+                <a onClick={sell} href="" class="btn btn-primary">SELL THE CROP</a>
               </div>
             </div>
           </div>

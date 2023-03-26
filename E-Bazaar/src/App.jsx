@@ -8,6 +8,9 @@ import { Route , Routes, useLocation } from 'react-router-dom'
 import Farmer from '../src/components/comp2/Farmer'
 import Buyer from '../src/components/comp3/Buyer'
 
+import Pitch from '../src/components/farmerComp/Pitch'
+import Sell from '../src/components/farmerComp/Sell'
+
 const App = () => {
   // const loc = useLocation();
   
@@ -39,6 +42,8 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/farmerportal' element={<Farmer/>} />
         <Route path='/buyerportal' element={<Buyer/>} />
+        <Route path='/pitch' element={<Pitch/>} />
+        <Route path='/sell' element={<Sell/>} />
       </Routes>
       <Contact/>
     </div>
