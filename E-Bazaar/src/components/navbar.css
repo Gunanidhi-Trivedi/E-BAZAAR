@@ -13,6 +13,16 @@
     width: 100%; */
 }
 
+.bgnav a{
+    padding: 12px 0px;
+}
+
+.bgnav a:hover{
+    background-color: rgb(36, 36, 36);
+    font-size: 17px;
+    text-shadow: 1px 1px 5px white;
+}
+
 .imgsize {
     width: 5%;
     height: 5%;
