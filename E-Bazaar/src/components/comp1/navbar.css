@@ -27,3 +27,13 @@
     width: 5%;
     height: 5%;
 }
+
+.button{
+    padding: 10px;
+    background-color: rgba(57, 135, 183, 0.657);
+    color: white;
+}
+
+.userName{
+    color : white;
+}
