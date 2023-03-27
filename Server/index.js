@@ -16,7 +16,6 @@ const db = mysql.createConnection({
 
 // post request
 app.post('/create', (req, res) => {
-    console.log(req.body);
     const product = req.body.product;
     const description = req.body.description;
     const location = req.body.location;
