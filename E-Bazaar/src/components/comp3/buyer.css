@@ -13,3 +13,18 @@
     color: black;
     font-size: larger;
 }
+.childs{
+    min-width: 33%;
+    padding: 15px;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    /* justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 70px; */
+}

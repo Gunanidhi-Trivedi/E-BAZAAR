@@ -1,56 +1,59 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './buyer.css'
 
 import { Link } from 'react-router-dom'
 
 const Buyer = () => {
+
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    async function fetchCards() {
+      const response = await fetch('http://localhost:3000/product');
+      const data = await response.json();
+      setCards(data);
+    }
+
+    fetchCards();
+  }, []);
+
+
+
+
   return (
     <div className="buyer">
       <div>
         <h1>Buyer Portal</h1>
       </div>
+
       <div>
-      <div>
-        <div className='parent'>
-          <div class="px-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mango</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text"><b>Location :</b> durg</p>
-                <p class="card-text"><b>price :</b> 100/kg</p>
-                <a href="#" class="btn btn-primary">buy</a>
-              </div>
-            </div>
+        <div>
+          <div className='parent'>
+
+            {cards.map((card) => (
+               <div class="px-3 childs">
+               <div class="card">
+                 <div class="card-body">
+                   <h5 class="card-title">{card.product}</h5>
+                   <p class="card-text">{card.description}</p>
+                   <p class="card-text"><b>Location : </b> {card.location}</p>
+                   <p class="card-text"><b>Stoke : </b> {card.quntity_in_kg} kg left</p>
+                   <p class="card-text"><b>Price :</b> {card.price_per_kg}/kg</p>
+
+                   <a href="#" class="btn btn-primary">buy</a>
+                 </div>
+               </div>
+             </div>
+            
+
+            ))}
+
           </div>
-          <div class="px-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mango</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text"><b>Location :</b> durg</p>
-                <p class="card-text"><b>price :</b> 100/kg</p>
-                <a href="#" class="btn btn-primary">buy</a>
-              </div>
-            </div>
-          </div>
-          <div class="px-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mango</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text"><b>Location :</b> durg</p>
-                <p class="card-text"><b>price :</b> 100/kg</p>
-                <a href="#" class="btn btn-primary">buy</a>
-              </div>
-            </div>
-          </div>
-         
         </div>
+
       </div>
-        
-      </div>
-        <button class='btn btn-primary'><Link to="/#home" >HOMEPAGE</Link></button>
+
+      {/* <button class='btn btn-primary'><Link to="/#home" >HOMEPAGE</Link></button> */}
     </div>
   )
 }
