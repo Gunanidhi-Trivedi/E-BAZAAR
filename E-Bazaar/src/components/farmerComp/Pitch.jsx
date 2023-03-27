@@ -3,6 +3,8 @@ import {useState} from "react";
 import Axios from "axios";
 import './pitch.css'
 
+
+
 const Pitch = () => {
   
 const [product,setProduct] = useState("");
@@ -21,6 +23,11 @@ const add_product=()=>{
     quntity_in_kg:quntity_in_kg,
     price_per_kg:price_per_kg
   }).then(()=>{
+    alert("success")
+    // relode the componen
+
+
+
   })
   .catch(()=>{
     console.log("error")

@@ -18,6 +18,9 @@ const Navbar = () => {
   function contact() {
     navigate("/#contact")
   }
+  function home() {
+    navigate("/#home")
+  }
 
   return (
     <div>
@@ -27,7 +30,7 @@ const Navbar = () => {
           <div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link text-white px-4" href="/">HOME</a>
+              <a onClick={home} class="nav-item nav-link text-white px-4" href="#home">HOME</a>
               <a onClick={services} class="nav-item nav-link text-white px-4" href="#services">SERVICES</a>
               <a onClick={contact} class="nav-item nav-link text-white px-4" href="#contact">CONTACT</a>
 

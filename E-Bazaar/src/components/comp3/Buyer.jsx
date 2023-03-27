@@ -28,7 +28,7 @@ const Buyer = () => {
 
       <div>
         <div>
-          <div className='parent'>
+          <div className='parents'>
 
             {cards.map((card) => (
                <div class="px-3 childs">
