@@ -12,27 +12,6 @@ import Pitch from '../src/components/farmerComp/Pitch'
 import Sell from '../src/components/farmerComp/Sell'
 
 const App = () => {
-  // const loc = useLocation();
-  
-
-  // if(loc.pathname == "/farmerportal")
-  // {
-  //   return(
-  //     <Routes>
-  //       <Route path='/farmerportal' element={<Farmer/>} />
-  //     </Routes>
-  //   )
-  // }
-  // else if(loc.pathname == '/buyerportal')
-  // {
-  //     return(
-  //       <Routes>
-  //         <Route path='/buyerportal' element={<Buyer/>} />
-  //       </Routes>
-  //     )
-  // }
-  // else
-  // {
 
   // this method makes the nev bar and footer alwase visible when changin the page
     return (
