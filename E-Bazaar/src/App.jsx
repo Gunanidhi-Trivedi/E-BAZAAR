@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {userState} from "react"
 import Navbar from './components/comp1/Navbar'
 import Home from './components/comp1/Home'
 import Services from './components/comp1/Services'
@@ -12,6 +13,7 @@ import Pitch from '../src/components/farmerComp/Pitch'
 import Sell from '../src/components/farmerComp/Sell'
 
 const App = () => {
+
 
   // this method makes the nev bar and footer alwase visible when changin the page
     return (
