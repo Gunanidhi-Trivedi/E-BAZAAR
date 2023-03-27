@@ -9,3 +9,31 @@
     padding: 50px;
     margin-bottom: 70px;
 }
+
+.service{
+    background-image: url('../../assets/services_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.service h1{
+    font-family: Montserrat , sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 6px white;
+    text-shadow: -2px -2px 6px white;
+    margin-bottom: 3rem;
+}
+
+.inner{
+    padding: 2rem;
+    background-color: rgba(120, 192, 255, 0.364);
+    margin: 2rem;
+}
+.inner:hover{
+    background-color: rgba(157, 255, 0, 0.412);
+    font-size: 101%;
+}
