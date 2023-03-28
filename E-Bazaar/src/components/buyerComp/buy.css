@@ -1,0 +1,31 @@
+.buy {
+    text-align: center;
+    padding: 2rem;
+}
+
+.buy h1 {
+    font-family: League Spartan, sans-serif;
+    font-size: 3.5rem;
+}
+
+.buy a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.child1{
+    min-width: 33%;
+    padding: 15px;
+}
+
+.parent1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+
+    /* justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 70px; */
+}
