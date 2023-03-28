@@ -12,6 +12,9 @@ import Buyer from '../src/components/comp3/Buyer'
 import Pitch from '../src/components/farmerComp/Pitch'
 import Sell from '../src/components/farmerComp/Sell'
 
+import Buy from '../src/components/buyerComp/Buy'
+import MakePitch from '../src/components/buyerComp/MakePitch'
+
 const App = () => {
 
 
@@ -25,6 +28,8 @@ const App = () => {
         <Route path='/buyerportal' element={<Buyer/>} />
         <Route path='/pitch' element={<Pitch/>} />
         <Route path='/sell' element={<Sell/>} />
+        <Route path='/buycrop' element={<Buy/>} />
+        <Route path='/preorder' element={<MakePitch/>} />
       </Routes>
       <Contact/>
     </div>

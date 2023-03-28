@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './buyer.css'
+import './buy.css'
 
 import { Link } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const Buy = () => {
 
 
   return (
-    <div className="buy">
+    <div className="Buy">
       <div>
         <h1>Buyer Portal</h1>
       </div>
@@ -29,7 +29,7 @@ const Buy = () => {
       <div>
         <div>
           <div className='parent1'>
-
+        
             {cards.map((card) => (
                <div class="px-3 child1">
                <div class="card">
