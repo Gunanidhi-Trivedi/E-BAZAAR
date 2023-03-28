@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import {userState} from "react"
+import React from 'react'
 import Navbar from './components/comp1/Navbar'
 import Home from './components/comp1/Home'
-import Services from './components/comp1/Services'
 import Contact from './components/comp1/Contact'
-import { Route , Routes, useLocation } from 'react-router-dom'
+import { Route , Routes } from 'react-router-dom'
+
+import LoginPage from './components/comp1/Login'
+import SignUp from './components/comp1/SignUp'
 
 import Farmer from '../src/components/comp2/Farmer'
 import Buyer from '../src/components/comp3/Buyer'
@@ -31,6 +32,8 @@ const App = () => {
         <Route path='/buycrop' element={<Buy/>} />
         <Route path='/preorder' element={<MakePitch/>} />
         <Route path='/govtschemes' element={<Govtscheme/>} />
+        <Route path='/login' element={<LoginPage/>} />
+        <Route path='/signUp' element={<SignUp/>} />
       </Routes>
       <Contact/>
     </div>

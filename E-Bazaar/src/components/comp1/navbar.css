@@ -38,3 +38,13 @@
     color : white;
     align-items: center;
 }
+
+.bgnav h6 a{
+    color: white;
+    text-decoration: none;
+}
+
+.bgnav h6{
+    margin-top: 3px;
+}
+

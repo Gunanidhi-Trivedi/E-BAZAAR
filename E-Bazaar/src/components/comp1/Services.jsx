@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Route , Routes } from 'react-router-dom'
 import './services.css'
 
 const Services = () => {

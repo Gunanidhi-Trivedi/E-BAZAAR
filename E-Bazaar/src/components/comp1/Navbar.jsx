@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import './navbar.css'
-import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from 'react-router-dom';
 
 
 
 const Navbar = () => {
-
-  const {user, loginWithRedirect, isAuthenticated, logout} = useAuth0();
   
   const navigate = useNavigate()
 
@@ -34,6 +32,10 @@ const Navbar = () => {
     }
   }
 
+  function gologin() {
+    navigate("/#login")
+  }
+
   return (
     <div>
       <div>
@@ -48,24 +50,9 @@ const Navbar = () => {
 
               <a onClick={changeLang} className="nav-item nav-link text-white px-4" href="#language">{lang}</a>
 
-              {isAuthenticated && (
-              <li className="userName">
-              <p> {user.name} </p>
-              </li>
-              )}
-           
-
-            <li>
-             {isAuthenticated ? 
-                  (<li>
-                  <button className="button" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                    Log Out
-                  </button>
-                  </li>)  :  
-                          (<li>
-                          <button className="button" onClick={() => loginWithRedirect()}>Log In</button>
-                          </li>)}
-            </li>
+                  <a className='nav-item nav-link text-white px-4'>
+                   <h6> <Link onClick={gologin} to="/login" >LOG IN</Link> </h6>
+                  </a>
 
             </div>
           </div>
