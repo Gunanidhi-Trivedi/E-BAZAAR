@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from "react";
 import Axios from "axios";
-import './makepich.css'
+import './makepitch.css'
 
 const MakePitch = () => {
 
@@ -40,7 +40,9 @@ const add_preorder=()=>{
 
   return (
     <div className='pitch'>
-      <h1>Pitch Your Crop</h1>
+      <div>
+        <h1>Make a Pre-Order</h1>
+      </div>
       <div className='part'>
         <label >PRODUCT</label>
         <input type="text"  onChange={(e) => setProduct(e.target.value)}/>
