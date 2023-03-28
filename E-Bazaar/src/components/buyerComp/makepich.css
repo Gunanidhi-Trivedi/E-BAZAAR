@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@700&display=swap');
+/*League Spartan , Montserrat*/
+
+.pitch{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.pitch h1{
+    margin: 2rem;
+}
+
+.part{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.part label{
+    margin-right: 4.5rem;
+}
+
+.part input
+{
+    
+    padding: 0px 15px;
+}

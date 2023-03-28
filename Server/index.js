@@ -51,6 +51,35 @@ app.get('/product', (req, res) => {
 
 
 
+// buyers making pre-order
+
+app.post('/preorder', (req, res) => {
+    const product = req.body.product;
+    const description = req.body.description;
+    const location = req.body.location;
+    const quntity_in_kg = req.body.quntity_in_kg;
+    const price_per_kg = req.body.price_per_kg;
+    const deadline = req.body.deadline;
+
+    db.query(
+        "INSERT INTO preorder (product, description, location, quntity_in_kg, price_per_kg, deadline) VALUES (?,?,?,?,?,?)",
+        [product,description,location,quntity_in_kg,price_per_kg,deadline],
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send("Values Inserted");
+            }
+        }
+    );
+
+});
+
+
+
+
+
+
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
