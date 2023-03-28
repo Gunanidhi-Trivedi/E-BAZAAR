@@ -13,6 +13,9 @@ const Farmer = () => {
   function sell() {
     navigate("/sell")
   }
+  function schemefn() {
+    navigate("/govtschemes")
+  } 
 
   return (
     <div className="farmer">
@@ -40,6 +43,9 @@ const Farmer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='schemes'>
+        <a onClick={schemefn} href="">GET LATEST FARMER SCHEMES FROM GOVERNMENT</a>
       </div>
     </div>
   )

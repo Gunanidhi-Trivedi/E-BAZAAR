@@ -15,9 +15,9 @@ import Sell from '../src/components/farmerComp/Sell'
 import Buy from '../src/components/buyerComp/Buy'
 import MakePitch from '../src/components/buyerComp/MakePitch'
 
+import Govtscheme from '../src/components/comp4/govtscheme'
+
 const App = () => {
-
-
   // this method makes the nev bar and footer alwase visible when changin the page
     return (
   <div>
@@ -30,6 +30,7 @@ const App = () => {
         <Route path='/sell' element={<Sell/>} />
         <Route path='/buycrop' element={<Buy/>} />
         <Route path='/preorder' element={<MakePitch/>} />
+        <Route path='/govtschemes' element={<Govtscheme/>} />
       </Routes>
       <Contact/>
     </div>
