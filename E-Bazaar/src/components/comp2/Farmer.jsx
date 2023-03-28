@@ -21,7 +21,7 @@ const Farmer = () => {
       </div>
       <div>
         <div className='parent'>
-          <div class="px-3">
+          <div class="px-5 mx-5 inner">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">SELL NEW CROPS</h5>
@@ -30,7 +30,7 @@ const Farmer = () => {
               </div>
             </div>
           </div>
-          <div class="px-3">
+          <div class="px-5 mx-5 inner">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">TAKE ORDER FOR CROPS IN DEMAND</h5>
@@ -41,7 +41,6 @@ const Farmer = () => {
           </div>
         </div>
       </div>
-      {/* <button class='btn btn-primary'><Link to="/#home" >HOMEPAGE</Link></button> */}
     </div>
   )
 }
