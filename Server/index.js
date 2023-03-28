@@ -77,6 +77,18 @@ app.post('/preorder', (req, res) => {
 
 
 
+// get request preorder
+app.get('/getpreorder', (req, res) => {
+    db.query("SELECT * FROM preorder", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result)
+        }
+    });
+});
+
+
 
 
 

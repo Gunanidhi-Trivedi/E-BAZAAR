@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './buy.css'
 
-import { Link } from 'react-router-dom'
-
 const Buy = () => {
 
   const [cards, setCards] = useState([]);
