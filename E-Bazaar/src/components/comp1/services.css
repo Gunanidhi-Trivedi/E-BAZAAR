@@ -32,6 +32,7 @@
     padding: 2rem;
     background-color: rgba(120, 192, 255, 0.364);
     margin: 2rem;
+    border-radius: 20px;
 }
 .inner:hover{
     background-color: rgba(157, 255, 0, 0.412);
