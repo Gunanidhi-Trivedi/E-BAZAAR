@@ -24,13 +24,14 @@ const add_product=()=>{
     price_per_kg:price_per_kg
   }).then(()=>{
     alert("success")
-    // relode the componen
-
+    // relode the component
+    window.location.reload();
 
 
   })
   .catch(()=>{
     console.log("error")
+    alert("please try again")
   })
 }
 
