@@ -88,6 +88,26 @@ app.get('/getpreorder', (req, res) => {
     });
 });
 
+// user signup
+app.post('/signup', (req, res) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const password = req.body.password;
+
+    db.query(
+        "INSERT INTO user (name, email, password) VALUES (?,?,?)",
+        [name, email, password],
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send("Values Inserted");
+            }
+        }
+    );
+});
+
+
 
 
 

@@ -2,25 +2,28 @@ import React from 'react';
 import {useState} from "react";
 import Axios from "axios";
 import './signUp.css'
+import { useNavigate } from 'react-router-dom';
 
 const signUp = () => {
 
     const [name,setName ] = useState("");
-    const [mail,setMail ] = useState("");
+    const [email,setMail ] = useState("");
     const [password,setPassword ] = useState("");
 
+    const navigate = useNavigate();
+
     const submitForm = () => {
-        Axios.post("http://localhost:3000/create",{
+        Axios.post("http://localhost:3000/signup",{
           name:name,
-          mail:mail,
+          email:email,
           password:password,
         }).then(()=>{
           alert("success")
           // relode the component
-          window.location.reload();
+          // navigate('/')
+          ;
         })
         .catch(()=>{
-          console.log("error")
           alert("please try again")
         })
       }
