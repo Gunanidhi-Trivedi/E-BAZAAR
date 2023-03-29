@@ -48,6 +48,8 @@ const Navbar = () => {
               <a onClick={services} className="nav-item nav-link text-white px-4" href="#services">SERVICES</a>
               <a onClick={contact} className="nav-item nav-link text-white px-4" href="#contact">CONTACT</a>
 
+              <div id='google_element'></div>
+
               <a onClick={changeLang} className="nav-item nav-link text-white px-4" href="#language">{lang}</a>
 
                   <a className='nav-item nav-link text-white px-4'>
