@@ -5,7 +5,7 @@ import Contact from './components/comp1/Contact'
 import { Route , Routes } from 'react-router-dom'
 
 import LoginPage from './components/comp1/Login'
-import SignUp from './components/comp1/SignUp'
+import SignUp from './components/comp1/signUp'
 
 import Farmer from '../src/components/comp2/Farmer'
 import Buyer from '../src/components/comp3/Buyer'
